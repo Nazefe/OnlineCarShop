@@ -1,6 +1,6 @@
 package Site;
 
-public class CarDealership {
+public class Main {
     public static void main(String[] args) {
         Manager manager = new Manager("Иван", "Петров", 1, 123);
         Admin admin = new Admin();
@@ -16,10 +16,11 @@ public class CarDealership {
 
         Buyer buyer = new Buyer("Алексей", "Сидоров", 30000);
         buyer.buyCar(car1);
-        
+
         System.out.println("Доступные машины:");
         for (Car car : admin.getAvailableCars()) {
             System.out.println(car);
         }
     }
 }
+
